@@ -1,0 +1,31 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid black;
+  h1 {
+    font-size: 4vmin;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  ul {
+    display: flex;
+    gap: 2vw;
+    margin-right: 1rem;
+    li {
+      list-style-type: none;
+      font-weight: bold;
+      border: 2px solid black;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      &:hover,
+      &.active {
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+}
