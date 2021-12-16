@@ -8,10 +8,11 @@ nav {
   border-bottom: 1px solid black;
   background: #fff;
   color: #000;
-  & a, & ul a {
+  & a,
+  & ul a {
     text-decoration: none;
     color: inherit;
-    font-weight: bold;
+    font-weight: 800;
   }
   .h1 {
     font-size: 4vmin;
@@ -21,14 +22,14 @@ nav {
   }
   ul {
     display: flex;
-    gap: 2vw;
+    gap: 1.5vw;
     margin-right: 1rem;
     .li {
       list-style-type: none;
       font-weight: bold;
       border: 2px solid black;
       padding: 0.5rem;
-      border-radius: 0.5rem;
+      border-radius: 0.3rem;
       &:hover,
       &.active {
         background: #000;

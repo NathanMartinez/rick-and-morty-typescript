@@ -8,9 +8,15 @@ function Navigation() {
         Rick and Morty
       </Link>
       <ul>
-        <Link className='li' to="/characters">Characters</Link>
-        <Link className='li' to="/episodes">Episodes</Link>
-        <Link className='li' to="/locations">Locations</Link>
+        <Link className="li" to="characters">
+          Characters
+        </Link>
+        <Link className="li" to="episodes">
+          Episodes
+        </Link>
+        <Link className="li" to="locations">
+          Locations
+        </Link>
       </ul>
     </nav>
   );
