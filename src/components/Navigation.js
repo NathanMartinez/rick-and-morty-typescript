@@ -1,13 +1,16 @@
+import { Link } from "react-router-dom";
 import "../styles/navigation.scss";
 
 function Navigation() {
   return (
     <nav>
-      <h1>Rick and Morty</h1>
+      <Link className="h1" to="/">
+        Rick and Morty
+      </Link>
       <ul>
-        <li>Characters</li>
-        <li>Episodes</li>
-        <li>Locations</li>
+        <Link className='li' to="/characters">Characters</Link>
+        <Link className='li' to="/episodes">Episodes</Link>
+        <Link className='li' to="/locations">Locations</Link>
       </ul>
     </nav>
   );

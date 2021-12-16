@@ -6,7 +6,7 @@ function Footer() {
       <div>
         <div>
           <p>
-            Built by <strong>Nathan Martinez</strong> 2021 | Inspired by{" "}
+            Built by <strong>Nathan Martinez</strong> 2021 | Inspired by
             <strong>Axel Fuhrmann</strong>
           </p>
         </div>
