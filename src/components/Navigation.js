@@ -7,7 +7,7 @@ function Navigation() {
       <Link className="h1" to="/">
         Rick and Morty
       </Link>
-      <ul>
+      <div>
         <Link className="li" to="characters">
           Characters
         </Link>
@@ -17,7 +17,7 @@ function Navigation() {
         <Link className="li" to="locations">
           Locations
         </Link>
-      </ul>
+      </div>
     </nav>
   );
 }

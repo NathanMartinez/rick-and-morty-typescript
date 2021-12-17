@@ -1,11 +1,18 @@
+import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Container from "./components/Container";
+
+// Pages
+import Home from "./pages/Home";
+import Characters from "./pages/Characters";
+import Episodes from "./pages/Episodes";
+import Locations from "./pages/Locations";
+
+// Components
 import Navigation from "./components/Navigation";
-import Home from "./components/Home";
-import Characters from "./components/Characters";
-import Episodes from "./components/Episodes";
-import Locations from "./components/Locations";
+import Container from "./components/Container";
 import Footer from "./components/Footer";
+
+// SCSS
 import "./styles/app.scss";
 
 function App() {
