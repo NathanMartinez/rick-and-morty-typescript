@@ -1,7 +1,13 @@
-import React from "react";
 import "../styles/test-card.scss";
 
-function TestCard({ data }) {
+type TestCardData = {
+  data: {
+    name: string;
+    description: string;
+  };
+};
+
+function TestCard({ data }: TestCardData) {
   const { name, description } = data;
 
   return (

@@ -1,6 +1,10 @@
 import "../styles/container.scss";
 
-function Container({ children }) {
+type Props = {
+  children?: React.ReactNode;
+};
+
+function Container({ children }: Props) {
   return <div className="container">{children}</div>;
 }
 

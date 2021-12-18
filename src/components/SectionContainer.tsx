@@ -1,7 +1,11 @@
 import TestCard from "./TestCard";
-import '../styles/section-container.scss'
+import "../styles/section-container.scss";
 
-function SectionContainer({ title }) {
+type Title = {
+  title: string;
+};
+
+function SectionContainer({ title }: Title) {
   const cards = [
     {
       id: 1,

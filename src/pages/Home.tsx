@@ -1,4 +1,3 @@
-import React from "react";
 import SectionContainer from "../components/SectionContainer";
 import "../styles/home.scss";
 
