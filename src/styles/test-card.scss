@@ -1,6 +1,7 @@
 .test-card {
-    width: 200px;
-    height: 700px;
-    background: #555;
-    border-radius: 2rem;
+  min-width: 200px;
+  min-height: 400px;
+  background: #555;
+  border-radius: 2rem;
+  padding: 2rem;
 }
