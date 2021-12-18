@@ -1,0 +1,42 @@
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & h1 {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1rem;
+  }
+  & section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 2rem;
+  }
+}
+@media (min-width: 660px) {
+  .section-container {
+    & section {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas:
+        "first first second second"
+        " . third third . ";
+      & div:nth-child(1) {
+        grid-area: first;
+      }
+      & div:nth-child(2) {
+        grid-area: second;
+      }
+      & div:nth-child(3) {
+        grid-area: third;
+      }
+    }
+  }
+}
+@media (min-width: 1143px) {
+  .section-container {
+    & section {
+      display: flex;
+    }
+  }
+}
