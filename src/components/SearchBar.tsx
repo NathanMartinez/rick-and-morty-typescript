@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SearchIcon from '@material-ui/icons/Search';
+import SearchIcon from "@material-ui/icons/Search";
 import "../styles/search-bar.scss";
 
 type SubmitType =
@@ -28,6 +28,7 @@ function SearchBar() {
         name="searchText"
         value={searchText}
         onChange={handleChange}
+        placeholder="Search..."
       />
       <button onClick={handleSubmit}>{<SearchIcon />}</button>
     </form>
