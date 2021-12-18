@@ -1,9 +1,15 @@
 import { useState } from "react";
+import SearchIcon from '@material-ui/icons/Search';
+import "../styles/search-bar.scss";
+
+type SubmitType =
+  | React.FormEvent<HTMLFormElement>
+  | React.MouseEvent<HTMLButtonElement>;
 
 function SearchBar() {
   const [searchText, setSearchText] = useState("");
 
-  const handleSubmit = (event: React.MouseEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: SubmitType) => {
     event.preventDefault();
     console.log(searchText);
     setSearchText("");
@@ -23,7 +29,7 @@ function SearchBar() {
         value={searchText}
         onChange={handleChange}
       />
-      <input type="submit" />
+      <button onClick={handleSubmit}>{<SearchIcon />}</button>
     </form>
   );
 }
