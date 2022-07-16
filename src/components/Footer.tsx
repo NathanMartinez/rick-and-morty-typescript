@@ -1,14 +1,20 @@
-import "../styles/footer.scss";
+import '../styles/footer.scss'
 
 function Footer() {
-  return (
-    <footer>
-      <p>
-        Built by <strong>Nathan Martinez</strong> 2021 | Inspired by{" "}
-        <strong>Axel Fuhrmann</strong>
-      </p>
-    </footer>
-  );
+	return (
+		<footer>
+			<p>
+				Built by{' '}
+				<a href="https://github.com/NathanMartinez/rick-and-morty-typescript">
+					<strong>Nathan Martinez</strong>
+				</a>{' '}
+				2021 | Inspired by{' '}
+				<a href="https://rickandmortyapi.com/">
+					<strong>Axel Fuhrmann</strong>
+				</a>
+			</p>
+		</footer>
+	)
 }
 
-export default Footer;
+export default Footer
